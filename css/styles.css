@@ -1,0 +1,49 @@
+/* Custom styles for AetherDrop */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Smooth nav background on scroll */
+#navbar.scrolled {
+  background-color: rgba(2, 6, 23, 0.95);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Product card hover */
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(14, 165, 233, 0.15);
+  border-color: rgba(14, 165, 233, 0.4);
+}
+
+/* Form focus ring polish */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(14, 165, 233, 0.3);
+  color: white;
+}
